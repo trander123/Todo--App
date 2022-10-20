@@ -14,8 +14,8 @@ function App() {
   }, [darkTheme]);
   return (
     <>
-      <main className="container flex flex-col min-h-screen items-center px-5 pt-10 text-indigo-900 dark:text-indigo-200">
-        <div className="flex flex-col space-y-8 w-full sm:w-md sm:max-w-md">
+      <main className="container flex flex-col min-h-screen items-center px-5 pt-10 sm:pt-20 text-indigo-900 dark:text-indigo-200">
+        <div className="flex flex-col space-y-8 w-full sm:w-md sm:max-w-lg">
           <Header />
           <CreateTodo />
           <TodoList />

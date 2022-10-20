@@ -8,7 +8,7 @@ body {
 
 :root {
 
-  --clr-darkBG: rgb(19, 0, 71);
+  --clr-darkBG: rgb(15 23 42 / 1);
 }
 .container {
   background: url('/public/images/bg-mobile-light.jpg');

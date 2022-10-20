@@ -2,9 +2,9 @@ import React from "react";
 import { useTodoContext } from "../context/TodoContext";
 
 export const TodoStats = () => {
-  const {todosLeft, deleteCompleted} = useTodoContext();
+  const { todosLeft, deleteCompleted } = useTodoContext();
   return (
-    <div className="flex flex-row justify-between bg-white dark:bg-gradient-to-br from-indigo-900 to-pink-700 px-4 py-3.5 rounded-b-md shadow-2xl text-indigo-300 text-sm">
+    <div className="flex flex-row justify-between bg-white dark:bg-slate-800 px-4 py-3.5 rounded-b-md shadow-2xl text-indigo-300 text-sm">
       <span>
         {todosLeft() ? `${todosLeft()} item/s left` : "0 item/s left"}
       </span>

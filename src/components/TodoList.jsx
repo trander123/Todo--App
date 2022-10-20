@@ -24,14 +24,14 @@ export const TodoList = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="bg-white dark:bg-gradient-to-tr from-indigo-800 to-pink-700  rounded-t-md h-80 overflow-y-auto sm:h-96 shadow-2xl">
+      <div className="bg-white dark:bg-slate-800  rounded-t-md h-80 overflow-y-auto sm:h-96 shadow-2xl">
         <ul>
           {list.map((todo) => (
             <TodoItem todo={todo} key={todo.name}></TodoItem>
           ))}
         </ul>
       </div>
-      <TodoStats/>
+      <TodoStats />
       <Filters all={all} active={active} completed={completed} />
     </div>
   );
