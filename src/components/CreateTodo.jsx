@@ -16,7 +16,7 @@ export const CreateTodo = () => {
           className=" w-full rounded-md px-2 bg-transparent"
         />
         <button
-          className="border border-indigo-100 dark:border-slate-900 rounded-full"
+          className="border border-indigo-100 dark:border-slate-900 rounded-full hover:bg-gradient-to-br from-blue-500 to-pink-500" 
           onClick={() => {
             addTodo(todo);
             setTodo({ name: "" });
