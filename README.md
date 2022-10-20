@@ -2,6 +2,8 @@
 
 ![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)
 
+Live Server: https://micogeeks-todo-app.netlify.app/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
