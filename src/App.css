@@ -2,19 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  background: black;
   font-size: large;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
+:root {
+
+  --clr-darkBG: rgb(19, 0, 71);
+}
 .container {
   background: url('/public/images/bg-mobile-light.jpg');
   background-repeat: no-repeat;
   background-size: contain;
 }
+body.dark .container {
+  background: url('/public/images/bg-mobile-dark.jpg'),var(--clr-darkBG);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 
 .icons {
   width: 15px;
 }
+
 #toggle {
   background: url('/public/images/icon-check.svg');
 }
@@ -22,6 +33,11 @@ body {
 @media (min-width:640px) {
   .container {
     background: url('/public/images/bg-desktop-light.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  body.dark .container {
+    background: url('/public/images/bg-desktop-dark.jpg'), var(--clr-darkBG);
     background-repeat: no-repeat;
     background-size: contain;
   }
