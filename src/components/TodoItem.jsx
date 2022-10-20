@@ -4,7 +4,7 @@ export const TodoItem = ({ todo }) => {
   const { deleteTodo, toggleTodo } = useTodoContext();
 
   return (
-    <li>
+    <li className="border-b border-gray-400">
       <label
         htmlFor="toggle"
         style={{ textDecoration: todo.completed ? "line-through" : "none" }}

@@ -3,6 +3,7 @@
 @tailwind utilities;
 body {
   background: black;
+  font-size: large;
 }
 
 .container {
@@ -16,4 +17,12 @@ body {
 }
 #toggle {
   background: url('/public/images/icon-check.svg');
+}
+
+@media (min-width:640px) {
+  .container {
+    background: url('/public/images/bg-desktop-light.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

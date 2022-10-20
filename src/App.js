@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="container flex flex-col min-h-screen items-center px-5 pt-10">
-        <div className="flex flex-col space-y-5 min-w-full">
+        <div className="flex flex-col space-y-5 w-full sm:w-md sm:max-w-md">
           <Header/>
           <CreateTodo />
           <TodoList />

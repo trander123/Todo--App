@@ -23,7 +23,7 @@ export const TodoList = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="bg-white rounded-t-md h-40 overflow-y-auto">
+      <div className="bg-white rounded-t-md h-80 overflow-y-auto sm:h-96">
         <ul className="">
           {list.map((todo) => (
             <TodoItem todo={todo} key={todo.name}></TodoItem>
