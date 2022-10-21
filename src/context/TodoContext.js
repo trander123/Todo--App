@@ -25,7 +25,7 @@ export const TodoContextProvider = ({ children }) => {
   };
   //Simply displays the number of unfinished todos
   const todosLeft = () => {
-    const uncompletedTodos = todos.filter((i) => i.completed === false);
+    const uncompletedTodos = todos.map((i) => i.completed === false);
     return uncompletedTodos.length;
   };
   //toggles the todo status from completed: true to false or false to true
