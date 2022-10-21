@@ -12,6 +12,7 @@ function App() {
       ? document.body.classList.add("dark")
       : document.body.classList.remove("dark");
   }, [darkTheme]);
+
   return (
     <>
       <main className="container flex flex-col min-h-screen items-center px-5 pt-10 sm:pt-20 text-indigo-900 dark:text-indigo-200">

@@ -10,6 +10,8 @@ export const useLocalStorage = (key, initialValue) => {
 
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(value));
+    //localStorage.clear()
+    //console.log("localStorage Cleared")
     console.log("localStorage updated")
   }, [value, key]);
 
