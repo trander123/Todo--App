@@ -3,7 +3,7 @@ import { useTodoContext } from "../context/TodoContext";
 
 export const TodoStats = () => {
   const { deleteCompleted, todos } = useTodoContext();
-  const activeTodos = todos.filter((todo) => todo.completed === false)
+  const activeTodos = todos.length > 0 && todos[0] !== 'undefined' && todos.filter((todo) => todo.completed === false)
   return (
     <div className="flex flex-row justify-between bg-white dark:bg-slate-800 px-4 py-3.5 rounded-b-md shadow-2xl text-indigo-300 text-sm">
       <span>
