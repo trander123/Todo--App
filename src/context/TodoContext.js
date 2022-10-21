@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext } from "react";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 const TodoContext = createContext({});
 
@@ -7,7 +8,7 @@ export const useTodoContext = () => {
 };
 
 export const TodoContextProvider = ({ children }) => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useLocalStorage("todos","[]");
   //Add todo with validations
   const addTodo = (todo) => {
     if (todo.name === "") return;
