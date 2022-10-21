@@ -23,14 +23,6 @@ export const TodoContextProvider = ({ children }) => {
   const deleteCompleted = () => {
     setTodos(todos.filter((todo) => todo.completed !== true));
   };
-  //Simply displays the number of unfinished todos
-  const todosLeft = () => {
-    if(todos.length > 0){
-      const uncompletedTodos = todos.map((i) => i.completed === false);
-      return uncompletedTodos.length;
-    }
-    return 0;
-  };
   //toggles the todo status from completed: true to false or false to true
   const toggleTodo = (text) => {
     setTodos(
@@ -48,7 +40,6 @@ export const TodoContextProvider = ({ children }) => {
       <TodoContext.Provider
         value={{
           todos,
-          todosLeft,
           addTodo,
           deleteTodo,
           toggleTodo,
