@@ -6,7 +6,9 @@ export const Filters = ({ completed, active, all }) => {
     <div className="flex flex-row justify-center space-x-6 bg-white dark:bg-slate-800 px-4 py-2 rounded-md mt-5 shadow-2xl font-bold text-indigo-300">
       <button
         id="all"
-        className={state === "all" ? "text-indigo-900 dark:text-indigo-500" : ""}
+        className={
+          state === "all" ? "text-indigo-900 dark:text-indigo-500" : ""
+        }
         onClick={() => {
           all();
           setState("all");
@@ -16,7 +18,9 @@ export const Filters = ({ completed, active, all }) => {
       </button>
       <button
         id="active"
-        className={state === "active" ? "text-indigo-900 dark:text-indigo-500" : ""}
+        className={
+          state === "active" ? "text-indigo-900 dark:text-indigo-500" : ""
+        }
         onClick={() => {
           active();
           setState("active");
@@ -26,10 +30,12 @@ export const Filters = ({ completed, active, all }) => {
       </button>
       <button
         id="completed"
-        className={state === "completed" ? "text-indigo-900 dark:text-indigo-500" : ""}
+        className={
+          state === "completed" ? "text-indigo-900 dark:text-indigo-500" : ""
+        }
         onClick={() => {
           completed();
-          setState("completed")
+          setState("completed");
         }}
       >
         Completed
