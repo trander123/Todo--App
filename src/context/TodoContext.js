@@ -8,7 +8,7 @@ export const useTodoContext = () => {
 };
 
 export const TodoContextProvider = ({ children }) => {
-  const [todos, setTodos] = useLocalStorage("todos", [{name: "default", completed: false}])
+  const [todos, setTodos] = useLocalStorage("todos", [])
   //Add todo with validations
   const addTodo = (todo) => {
     if (todo.name === "") return;
