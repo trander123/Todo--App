@@ -2,7 +2,7 @@
 
 ![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)
 
-Live Server: https://micogeeks-todo-app.netlify.app/
+Live Server: https://micogeeks-todo.netlify.app/
 
 ## Welcome! 👋
 
