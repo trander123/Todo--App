@@ -23,6 +23,10 @@ body.dark .container {
 }
 
 
+#todo-list::-webkit-scrollbar {
+  display: none;
+}
+
 .icons {
   width: 15px;
 }
