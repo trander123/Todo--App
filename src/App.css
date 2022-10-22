@@ -11,6 +11,7 @@ body {
   --clr-darkBG: rgb(15 23 42 / 1);
 }
 .container {
+  min-width: 100vw;
   background: url('/public/images/bg-mobile-light.jpg');
   background-repeat: no-repeat;
   background-size: contain;
